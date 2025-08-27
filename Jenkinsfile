@@ -44,7 +44,7 @@ pipeline{
             stage ('qa) {
                    when {
                        branch 'release/*'
-                   }
+                   }   
                 steps {
                     echo "*** this is qa stage ***"
                 }

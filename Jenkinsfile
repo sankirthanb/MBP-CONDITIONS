@@ -1,32 +1,32 @@
 pipeline{
     agent any
     stages {
-            stage ('build) {
+            stage ('build') {
                 steps {
                     echo "*** this is build stage ***"
                 }
             }
-            stage ('build) {
+            stage ('build-art') {
                 steps {
                     echo "*** this is build stage ***"
                 }
             }
-            stage ('sonar) {
+            stage ('sonar') {
                 steps {
                     echo "*** this is sonar stage ***"
                 }
             }
-            stage ('nexus) {
+            stage ('nexus') {
                 steps {
                     echo "*** this is nexus stage ***"
                 }
             }
-            stage ('docker) {
+            stage ('docker') {
                 steps {
                     echo "*** this is docker stage ***"
                 }
             }
-            stage ('dcker push ) {
+            stage ('dcker push') {
                 steps {
                     echo "*** this is docker-push stage ***"
                 }

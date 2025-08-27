@@ -31,17 +31,17 @@ pipeline{
                     echo "*** this is docker-push stage ***"
                 }
             }
-            stage ('dev) {
+            stage ('dev') {
                 steps {
                     echo "*** this is dev stage ***"
                 }
             }
-            stage ('test) {
+            stage ('test') {
                 steps {
                     echo "*** this is qa stage ***"
                 }
             }
-            stage ('qa) {
+            stage ('qa') {
                    when {
                        branch 'release/*'
                    }   
@@ -49,7 +49,7 @@ pipeline{
                     echo "*** this is qa stage ***"
                 }
             }  
-             stage ('prod) {
+             stage ('prod') {
                    when {
                        tag pattern: "v\\d{1,2}.\\d{1,2}\\.\\d{1,2}", comparator: "REGEXP" 
                    }

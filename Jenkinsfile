@@ -1,13 +1,11 @@
 pipeline{
     agent any
     stages {
-        stage('Paralles') {
             stage ('Build'){
                     steps {
                         echo "***hi Build****"
                     }
                 }
-        }
             parallel {
                 stage ('stage-1') {
                     steps {

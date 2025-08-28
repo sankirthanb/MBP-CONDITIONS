@@ -6,7 +6,8 @@ pipeline{
                     steps {
                         echo "***hi Build****"
                     }
-                }    
+                }
+        }
             parallel {
                 stage ('stage-1') {
                     steps {

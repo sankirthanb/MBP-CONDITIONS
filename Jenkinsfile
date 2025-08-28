@@ -23,6 +23,16 @@ pipeline{
                     }
                 }          
             }           
-        }              
+        } 
+        stage ('prod'){
+            input {
+                message "ready to deploy?"
+                ok 'yes'
+                submitter 'admin needs to approve this'
+            }
+            steps {
+                    echo "***hi Build****"
+                }
+            }             
         }
     }

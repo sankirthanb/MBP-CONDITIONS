@@ -7,6 +7,7 @@ pipeline{
                     echo "***hi Build****"
                 }
             }
+        stage ('Scans') {
             parallel {
                 stage ('stage-1') {
                     steps {
@@ -18,6 +19,7 @@ pipeline{
                         sleep 10
                     }
                 }          
-            }
+            }           
+        }              
         }
     }
